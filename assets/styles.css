@@ -1,0 +1,146 @@
+*{
+    background-color: white;
+    color: rgb(70, 69, 69);
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 38px;  
+}
+h1{
+    font-size: 40px;
+    font-weight: lighter;
+    color: grey;
+    line-height: 1.8;
+}
+h3{
+    line-height: 1.8;
+}
+#top-flex{
+    display: flex;
+    flex-direction: row;
+    border: lightgray 1px solid;
+    height: 50px;
+    font-weight: bold;
+
+}
+#top-flex div{
+ border-right: 1px lightgray solid;
+ padding: 15px; 
+ padding-right: 25px;
+ 
+}
+#menu-flex{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 80px;
+    font-weight: bold;
+
+}
+li{
+    display: inline;
+}
+ul{
+    list-style-type: none;
+     
+}
+ul li a{
+    text-decoration: none;
+    padding-right: 20px;
+}
+li a:hover{
+    color:lightblue;
+}
+li a  :active{
+    color: lightblue;
+}
+#banner{
+    background-image: url(/src/home-banner-bg.png);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 90px;
+    padding-left: 5%;
+    font-weight:  100;
+    padding-top: 10%;
+    text-align: left;
+}
+.newsSection{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+}
+.newsThumbnail{
+    border: 1px solid lightgray;
+    width: min-content;
+    margin-top: 50px;
+    padding: 0;
+    
+}
+.projectSection{
+    text-align: center;
+    margin: 10%  30%;
+    margin-bottom: 5%;
+}
+.categories{
+    text-align: center;
+}
+.categories a{
+    text-decoration: none;
+    margin: 15px;
+}
+.categories a:hover{
+    color: lightblue;
+}
+.categoryGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+}
+.categoryGrid img{
+    width: min-content;
+    margin-top: 50px;
+    padding: 0;
+    width: inherit;
+}
+.feedbackFlex{
+    background-color: lightblue;
+    width: 100%;
+    height:400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    justify-items: center;
+    
+}
+.feedbackSection{
+    background-color: white;
+    color: black;
+    height: 40%;
+    width: 30%;
+    margin: 10% 10px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    min-width: 40%;
+    
+}
+.feedbackSection img{
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+}
+.footer ,footer > div {
+    background-color: rgb(32, 32, 32);
+    display: grid;
+    grid-template-columns: auto 60% auto;
+    min-height: 400px;
+}
