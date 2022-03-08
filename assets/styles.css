@@ -138,9 +138,54 @@ li a  :active{
     height: 50px;
     margin: 25px;
 }
-.footer ,footer > div {
+.footer {
     background-color: rgb(32, 32, 32);
-    display: grid;
-    grid-template-columns: auto 60% auto;
+    display: inline-flex;
+    flex-direction: row;
     min-height: 400px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    color: white;
+    padding:  5% 0;
+
+}
+.footer div {
+    background-color: inherit;
+    color: white;
+    margin: 5%;
+    
+}
+.footer div h3{
+    background-color: inherit;
+    color: white;
+
+}
+#submitButton{
+    border-radius: 30px; flex-basis: 30%; height: 40px ;
+    background-color: rgb(113, 220, 255);
+    color: white;
+
+}
+#instaFeed{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+
+}
+#logoDiv{
+    flex-basis: 5%;padding-top: 8px;
+}
+#logoImg{
+   width: 60px;
+
+}
+#logoText{
+    flex-basis: 5%;font-size: 20px;padding-top: 25px;color: black;
+}
+#menu-bar{
+    flex-basis: 90%;text-align:right;padding-top: 30px;
+}
+.newsThumbnailDescription{
+    margin: 15px;
 }
