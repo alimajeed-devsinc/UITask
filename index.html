@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="assets/styles.css">
     <title>UItask</title>
 </head>
+<script>
+   a=0;
+  function showMenu(){
+       if (a==0){
+           document.getElementById("menuTable").style.display="block";
+           a= 1;
+       }
+       else{
+        document.getElementById("menuTable").style.display="none";
+           a= 0;
+       }
+   }
+</script>
 <body>
     <div id="top-flex">
     <div style="flex-basis: 20%; text-align: right;"><img style="text-align: center/right; " src="src/phone.jpg" height="15px"></img>012-6532-568-9746</div>
@@ -22,7 +35,7 @@
     </div>
     <div id="menu-flex">
         <div style="flex-basis: 5%;padding-top: 8px;"> <img src="src/logo.png" style="width: 60px;" > </div>
-        <div style="flex-basis: 5%;font-size: 20px;padding-top: 25px;color: black;">Tangre</div>
+        <div id = "logoName" style="flex-basis: 5%;font-size: 20px;padding-top: 25px;color: black;">Tangre</div>
         <div id="menubar" style="flex-basis: 90%;text-align:right;padding-top: 30px;">
             <ul>
                 <li><a href="#">HOME</a></li>
@@ -34,29 +47,43 @@
 
             </ul>
         </div>
+        <div class="menuDropDown">
+            <a ><img src="src/menuicon.png" onclick="showMenu()" style="width: 30px;height: 30px;"></a>
+        </div>
+        
     </div>
-   <div id="banner">Creativity <br> Beyond <br> Life</div>
+    <table id="menuTable">
+        <tr><th><a href="">HOME</a></th></tr>
+        <tr><th><a href="">PORTFOLIO</a></th></tr>
+        <tr><th><a href="">ABOUT</a></th></tr>
+        <tr><th><a href="">BLOG</a></th></tr>
+        <tr><th><a href="">PAGES</a></th></tr>
+        <tr><th><a href="">CONTACT</a></th></tr>
+    </table>
+   <div id="banner">Creativity <br> Beyond <br> Life <br> <br>
+   <input id="hireButton"  type="button" value="Hire us now!" >
+</div>
    <div class="newsSection">
-   <div style="grid-column-start: 1;grid-column-end: 4;">
+   <div  style="grid-column-start: 1;grid-column-end: 4;">
     <h1>Latest News from all categories</h1>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatem non corrupti ist.
+    <div id="newsText"> .   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatem non corrupti ist.</div>
 </div>
    <div class="newsThumbnail">
        <img src="src/xn1.png"  >
        <h3>Addiction with Gambling</h3>
-       <div style="margin: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
+       <div style="margin: 15px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
 
    </div>
    <div class="newsThumbnail">
        <img src="src/xn2.png" alt="">
        <h3>Headset No longer Wired</h3>
-       <div style="margin: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
+       <div style="margin: 15px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
 
    </div>
    <div class="newsThumbnail">
        <img src="src/xn3.png" alt="">
        <h3>Life Advice Looking At Window</h3>
-       <div style="margin: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
+       <div style="margin: 15px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
 
    </div>
    </div>
