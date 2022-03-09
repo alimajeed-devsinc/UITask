@@ -7,88 +7,82 @@
     <link rel="stylesheet" href="assets/styles.css">
     <title>UItask</title>
 </head>
-<script>
-   a=0;
-  function showMenu(){
-       if (a==0){
-           document.getElementById("menuTable").style.display="block";
-           a= 1;
-       }
-       else{
-        document.getElementById("menuTable").style.display="none";
-           a= 0;
-       }
-   }
-</script>
-<body>
-    <div id="top-flex">
-    <div style="flex-basis: 20%; text-align: right;"><img style="text-align: center/right; " src="src/phone.jpg" height="15px"></img>012-6532-568-9746</div>
-    <div style="flex-basis: 55%;text-align: right; word-spacing: 25px;">
-    <img src="src/fb.png" style="height: 15px;">
-    <img src="src/twitteric.png" style="height: 15px;">
-    <img src="src/wwwic.png" style="height: 15px;">
-    <strong style="color: grey; font-size: 17px;">Be</strong>
 
+<body>
+    
+    <div class="top-flex">
+        <div class="phone-top-flex" >
+            <img  src="src/phone.jpg" height="15px"></img>
+            012-6532-568-9746
+        </div>
+        <div style="flex-basis: 60%;text-align: right; word-spacing: 25px;">
+            <img src="src/fb.png" style="height: 15px;">
+            <img src="src/twitteric.png" style="height: 15px;">
+            <img src="src/wwwic.png" style="height: 15px;">
+            <strong style="color: grey; ;">Be</strong>
+
+        </div>
+        <div style="flex-basis: 15%;text-align: center;"><strong style="color: rgb(70, 69, 69);"> GET FREE QUOTE</strong> </div>
     </div>
-    <div style="flex-basis: 15%;text-align: center;"><strong style="color: rgb(70, 69, 69);"> GET FREE QUOTE</strong> </div>
-    <div style="border: 0px;"></div>
-    </div>
-    <div id="menu-flex">
-        <div style="flex-basis: 5%;padding-top: 8px;"> <img src="src/logo.png" style="width: 60px;" > </div>
-        <div id = "logoName" style="flex-basis: 5%;font-size: 20px;padding-top: 25px;color: black;">Tangre</div>
-        <div id="menubar" style="flex-basis: 90%;text-align:right;padding-top: 30px;">
+    
+    <div class="menu-flex">
+        <div class="logo-icon" > <img src="src/logo.png" style="width: 50px;" > </div>
+        <div class= "logo-name" >Tangre</div>
+        <div class="menubar" >
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
                 <li><a href="#">ABOUT</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">PAGES</a></li>
+                <li><a href="#">BLOG &darr;</a></li>
+                <li><a href="#">PAGES &darr;</a></li>
                 <li><a href="#">CONTACT</a></li>
 
             </ul>
         </div>
         <div class="menuDropDown">
-            <a ><img src="src/menuicon.png" onclick="showMenu()" style="width: 30px;height: 30px;"></a>
+            <a ><img src="src/menuicon.png"  style="width: 30px;height: 30px;"></a>
         </div>
         
     </div>
-    <table id="menuTable">
+    <!-- <table class="menuTable">
         <tr><th><a href="">HOME</a></th></tr>
         <tr><th><a href="">PORTFOLIO</a></th></tr>
         <tr><th><a href="">ABOUT</a></th></tr>
-        <tr><th><a href="">BLOG</a></th></tr>
+        <tr><th><a href="">BLOG</a> <img src="src/down-arrow.png" alt=""> </th></tr>
         <tr><th><a href="">PAGES</a></th></tr>
         <tr><th><a href="">CONTACT</a></th></tr>
-    </table>
-   <div id="banner">Creativity <br> Beyond <br> Life <br> <br>
-   <input id="hireButton"  type="button" value="Hire us now!" >
-</div>
-   <div class="newsSection">
-   <div  style="grid-column-start: 1;grid-column-end: 4;">
-    <h1>Latest News from all categories</h1>
-    <div id="newsText"> .   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatem non corrupti ist.</div>
-</div>
-   <div class="newsThumbnail">
+    </table> -->
+   <div class="banner">Creativity <br> Beyond <br> Life <br> <br>
+   <input class="hireButton"  type="button" value="Hire us now!" >
+    </div>
+    <div class="news-section">
+            
+                <h1>Latest News from all categories</h1>
+                Lorem ipsum dolor sit amet, sdfjsdk dkfsjdlkf  dskfjldsconsectetur adipisicing elit. Omnis voluptatem non corrupti ist. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae animi nobis sit necessitatibus nam modi ut delectus quidem earum perferendis expedita, nostrum impedit. Nulla dicta non placeat exercitationem. Blanditiis.
+            
+    </div>
+    <div class="news-section-thumbnails">
+   <div class="news-thumbnail">
        <img src="src/xn1.png"  >
        <h3>Addiction with Gambling</h3>
-       <div style="margin: 15px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
+       <div style="margin: 15px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
 
    </div>
-   <div class="newsThumbnail">
+   <div class="news-thumbnail">
        <img src="src/xn2.png" alt="">
        <h3>Headset No longer Wired</h3>
-       <div style="margin: 15px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
+       <div style="margin: 15px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
 
    </div>
-   <div class="newsThumbnail">
+   <div class="news-thumbnail">
        <img src="src/xn3.png" alt="">
        <h3>Life Advice Looking At Window</h3>
-       <div style="margin: 15px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
+       <div style="margin: 15px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt</div>
 
    </div>
    </div>
 
-   <div class="projectSection">
+   <div class="project-section">
        <h1>Our Recent Completed Projects</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos nemo reprehenderit saepe unde odit quidem, voluptates obcaecati? Ipsum eveniet distinctio nam facere officiis ad quaerat inventore totam ipsa aperiam?
    </div>
@@ -100,25 +94,28 @@
        <a href="">Web Design</a>
        <a href="">Print Material</a>
    </div>
-   <div class="categoryGrid">
-       <div href="#"> <img src="src/xn4.png" alt=""><h3>3D Helmet Design</h3>Client Project</div>
-       <div href="#"> <img src="src/xn5.png" alt=""><h3>2D Venyl Design</h3>Client Project</div>
-       <div href="#"> <img src="src/xn6.png" alt=""><h3>Creative Poster Design</h3>Client Project</div>
-       <div href="#"> <img src="src/xn4.png" alt=""><h3>Embosed Logo Design</h3>Client Project</div>
-       <div href="#"> <img src="src/xn6.png" alt=""><h3>3D Disposable Bottle</h3>Client Project</div>
-       <div href="#"> <img src="src/xn5.png" alt=""><h3>3D Logo Design</h3>Client Project</div>
+   <div class="category-grid">
+            <div href="#"> <img src="src/xn4.png" alt=""><h2>3D Helmet Design</h2>Client Project</div>
+            <div href="#"> <img src="src/xn5.png" alt=""><h2>2D Venyl Design</h2>Client Project</div>
+            <div href="#"> <img src="src/xn6.png" alt=""><h2>Creative Poster Design</h2>Client Project</div>
+        </div>
+    <div class="category-grid">
+       <div href="#"> <img src="src/xn4.png" alt=""><h2>Embosed Logo Design</h2>Client Project</div>
+       <div href="#"> <img src="src/xn6.png" alt=""><h2>3D Disposable Bottle</h2>Client Project</div>
+       <div href="#"> <img src="src/xn5.png" alt=""><h2>3D Logo Design</h2>Client Project</div>
    </div>
    <div class="feedbackFlex">
        <div class="feedbackSection">
            <div><img src="src/user.png" alt=""></div>
-           <div style="margin-top: 25px;margin-right: 0px;">Lorem ipsum dolor sit, amet consectetu.sdfjsdkljfskdj fkjsdflkjsd;flk dfkjdsfl;kj <h3>Mark ALviro wiens</h3>CEO at Google </div>
+           <div style="margin-top: 20px;margin-right: 0px;">Lorem ipsum dolor sit, amet consectetu.sdfjsdkljfskdj fkjsdflkjsd;flk dfkjdsfl;kj <h2>Mark ALviro wiens</h2>CEO at Google </div>
        </div>
        <div class="feedbackSection">
         <div><img src="src/user.png" alt=""></div>
-        <div style="margin-top: 25px;margin-left: 0px;">Lorem ipsum dolor sit, amet consectetu.sdfjsdkljfskdj fkjsdflkjsd;flk dfkjdsfl;kj <h3>Mark ALviro wiens</h3>CEO at Google </div>
+        <div style="margin-top: 20px;margin-left: 0px;">Lorem ipsum dolor sit, amet consectetu.sdfjsdkljfskdj fkjsdflkjsd;flk dfkjdsfl;kj <h2>Mark ALviro wiens</h2>CEO at Google </div>
    
        </div>
    </div>
+   <div id="footer3" style="background-color: rgb(32, 32, 32);">
    <div class="footer" >
     <div style="flex-basis: 20%;" >
     <h3>Top Products</h3> <br>
@@ -127,27 +124,42 @@
     Power Tools <br>
     Marketing Service <br>
     </div>
-    <div style="flex-basis: 50%;" ><h3>Newsletter</h3> <br>
+    <div class="newsletter" style="flex-basis: 50%;" ><h3>Newsletter</h3> <br>
     you can trust us we only send usefull mails.
-    <div style="display: flex; width: 100%; align-items: center;">
-        <input type="text" style="border-radius: 30px; flex-basis: 60%; height: 40px; align-items: center;text-align: center;" value=" Email Address">
-        <input id="submitButton" type="button"  value="Submit">    
+    <div class="email-flex" style="display: flex; width: 90%; align-items: center;">
+        <input type="text" style="border-radius: 30px; flex-basis: 60%; height: 40px; align-items: left;text-align: left  ;" value="Your Email Address">
+        <input class="submitButton" type="button"  value="Subscribe">    
     </div>
     </div>
     <div style="flex-basis: 30%;" class="instaFeed"><h3>Instagram Feed</h3><br>
-        <img src="src/user.png"  width="50px" height="50px" alt="">
-        <img src="src/user.png"  width="50px" height="50px" alt="">
-        <img src="src/user.png"  width="50px" height="50px" alt="">
-        <img src="src/user.png"  width="50px" height="50px" alt="">
-        <img src="src/user.png"  width="50px" height="50px" alt="">
-        <img src="src/user.png"  width="50px" height="50px" alt="">
-        <img src="src/user.png"  width="50px" height="50px" alt="">
-        <img src="src/user.png"  width="50px" height="50px" alt="">
+        <div class="insta-feed-flex">
+            <img src="src/user.png"  width="50px" height="50px" alt="">
+            <img src="src/user.png"  width="50px" height="50px" alt="">
+            <img src="src/user.png"  width="50px" height="50px" alt="">
+            <img src="src/user.png"  width="50px" height="50px" alt="">
+            
+        </div>
+        <div class="insta-feed-flex"> <img src="src/user.png"  width="50px" height="50px" alt="">
+            
+            <img src="src/user.png"  width="50px" height="50px" alt="">
+            <img src="src/user.png"  width="50px" height="50px" alt="">
+                </div>
 
     </div>
     
    
     </div>
-   
+   <div class="footer2">
+       <div>
+            Copyright &copy; 2021 All rights reserved| This template is made with &hearts;
+       </div>
+       <div>
+            <a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_square_black-512.png" width="50px" height="50px" alt=""></a>
+            <a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_square_black-1024.png" width="50px" height="50px" alt=""></a>
+            <a href=""><img src="data:image/png;base64,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" width="50px" height="50px" alt=""></a>
+            <a href=""><img src="data:image/png;base64,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" width="50px" height="50px" alt=""></a>
+
+       </div>
+   </div></div>
 </body>
 </html>

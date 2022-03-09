@@ -1,254 +1,423 @@
-*{
-    background-color: white;
-    color: rgb(70, 69, 69);
-    margin: 0px;
-    font-family: 'Poppins', sans-serif;  
-    font-weight: 38px;  
+* {
+  background-color: white;
+  color: rgb(70, 69, 69);
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
 }
-h1{
-    font-size: 40px;
-    font-weight: lighter;
-    color: grey;
-    line-height: 1.8;
+
+h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  color: grey;
+  line-height: 1.8;
 }
-h3{
-    line-height: 1.8;
+
+h3 {
+  line-height: 1.8;
 }
-#top-flex{
-    display: flex;
-    flex-direction: row;
-    border: lightgray 1px solid;
-    height: 50px;
-    font-weight: bold;
+
+.top-flex {
+  display: flex;
+  flex-direction: row;
+  border: lightgray 1px solid;
+  height: 70px;
+  width: 100%;
+  font-weight: bold;
+  margin-right: 2%;
+  
+}
+
+.logo-name {
+  flex-basis: 5%;
+  font-size: 2em;
+  padding-top: 25px;
+  color: black;
+  font-weight: bold;
+  overflow: visible;
+  padding-bottom: 1%;
+  
+}
+
+
+.phone-top-flex {
+  flex-basis: 20%; 
+  text-align: right;
+  padding-right: 5%;
 
 }
-#top-flex div{
- border-right: 1px lightgray solid;
- padding: 15px; 
- padding-right: 25px;
- 
+
+.top-flex div {
+  border-right: 1px lightgray solid;
+  padding-top: 2em;
+  padding-right: 1em;
+  
 }
-#menu-flex{
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    margin: 0px 80px;
-    font-weight: bold;
+
+.menu-flex {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  margin-left: 8%;
+  margin-top: 3px;
+  font-weight: bold;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding-right: 5%;
 
 }
-li{
-    display: inline;
+
+li a:hover {
+  color: lightblue;
 }
-ul{
-    list-style-type: none;
-     
+
+li a :active {
+  color: lightblue;
 }
-ul li a{
-    text-decoration: none;
-    padding-right: 20px;
+
+.banner {
+  background-image: url(/src/home-banner-bg.png);
+  height: 80%;
+  background-size: 120% 110%;
+  background-repeat: no-repeat;
+  color: white;
+  padding-left: 5%;
+  font-size:  5em;
+  font-weight: 10px;
+  padding-top: 15%;
+  text-align: left;
 }
-li a:hover{
-    color:lightblue;
+
+.news-section {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  width: 60%;
+  
 }
-li a  :active{
-    color: lightblue;
+
+.news-section-thumbnails{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  justify-content:space-between;
 }
-#banner{
-    background-image: url(/src/home-banner-bg.png);
-    height: 350px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-size: 90px;
-    padding-left: 5%;
-    font-weight:  100;
-    padding-top: 10%;
-    text-align: left;
+
+.news-thumbnail {
+  flex-basis: 30%;
+  border: 1px solid lightgray;
+  margin-top: 50px;
+  padding: 0;
+  border-radius: 5px;
 }
-.newsSection{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
-    gap: 25px;
-    width: 100%;
-    justify-content: center;
+
+.news-thumbnail h3 {
+  text-align: center;
+  word-spacing: 1.5;
+  margin-top: 5%;
 }
-.newsThumbnail{
-    border: 1px solid lightgray;
-    width: min-content;
-    margin-top: 50px;
-    padding: 0;
-    
+
+.news-thumbnail img {
+  width: 100%;
 }
-.projectSection{
-    text-align: center;
-    margin: 10%  30%;
-    margin-bottom: 5%;
+
+.project-section {
+  text-align: center;
+  margin: 0 20%;
+  margin-top: 15%;
+  margin-bottom: 5%;
 }
-.categories{
-    text-align: center;
+
+.categories {
+  text-align: center;
 }
-.categories a{
-    text-decoration: none;
-    margin: 15px;
+
+.categories a {
+  text-decoration: none;
+  margin: 15px;
 }
-.categories a:hover{
-    color: lightblue;
+
+.categories a:hover {
+  color: lightblue;
 }
-.categoryGrid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
-    gap: 25px;
-    width: 100%;
-    justify-content: center;
+
+.category-grid {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 2%;
+  width: 85%;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 2%;
 }
-.categoryGrid img{
-    width: min-content;
-    margin-top: 50px;
-    padding: 0;
-    width: inherit;
+
+.category-grid img {
+  width: min-content;
+  margin-top: 30px;
+  padding: 0;
+  width: inherit;
 }
-.feedbackFlex{
-    background-color: lightblue;
-    width: 100%;
-    height:400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5%;
-    justify-items: center;
-    
+.feedbackFlex {
+  background-color: lightblue;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  gap: 1%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  justify-items: center;
+  overflow: hidden;
 }
-.feedbackSection{
-    background-color: white;
-    color: black;
-    height: 40%;
-    width: 30%;
-    margin: 10% 10px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5px;
-    min-width: 40%;
-    
+
+.feedbackSection {
+  background-color: white;
+  color: black;
+  height: 35%;
+  width: 30%;
+  margin: 10% 10px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  padding-right: 0;
+  width: 40%;
+  text-align: left;
 }
-.feedbackSection img{
-    width: 50px;
-    height: 50px;
-    margin: 25px;
+.feedbackSection h2 {
+  line-height: 2em;
+  font-size: 1.5em;
+  font-weight: 100;
 }
+
+.feedbackSection img {
+  width: 30px;
+  height: 30px;
+  margin: 25px;
+}
+
+.newsletter div {
+  margin-left: 0 !important;
+}
+
 .footer {
-    background-color: rgb(32, 32, 32);
-    display: inline-flex;
-    flex-direction: row;
-    min-height: 400px;
-    width: 100%;
-    clear: both;
-    text-align: center;
-    color: white;
-    padding:  5% 0;
-
+  background-color: rgb(32, 32, 32);
+  display: inline-flex;
+  flex-direction: row;
+  max-height: 45vh;
+  width: 100%;
+  clear: both;
+  text-align: left;
+  color: white;
+  padding: 5% 0;
 }
 .footer div {
-    background-color: inherit;
-    color: white;
-    margin: 5%;
-    
+  background-color: inherit;
+  color: white;
+  margin: 5%;
 }
-.footer div h3{
-    background-color: inherit;
-    color: white;
+
+.footer div h3 {
+  background-color: inherit;
+  color: white;
+}
+
+.submitButton {
+  border-radius: 30px;
+  flex-basis: 30%;
+  height: 40px;
+  background-color: rgb(113, 220, 255);
+  color: white;
+}
+
+.instaFeed {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoDiv {
+  flex-basis: 5%;
+  padding-top: 8px;
+}
+
+.logoImg {
+  width: 60px;
+}
+
+.logoText {
+  flex-basis: 5%;
+  font-size: 20px;
+  padding-top: 25px;
+  color: black;
+}
+
+
+.newsThumbnailDescription {
+  margin: 15px;
+}
+
+.menuTable {
+  display: none;
+}
+
+.hireButton {
+  display: none;
+}
+
+.logo-icon{
+  flex-basis: 5%;
+  padding-top: 8px;
+
+} 
+
+.menu-flex img {
+  padding-top: 5%;
+  
+}
+
+.logo-icon img {
+  padding-top: 5%;
+}
+
+.menubar{
+  flex-basis: 90%;
+  text-align:right;
+  padding-top: 30px;
+  padding-right:3%;
+  
+}
+
+.email-flex{
+  justify-content: space-between;
+}
+  
+.insta-feed-flex {
+  display: flex;
+  flex-direction: row;
+  margin: 2% !important;
+  
+}
+
+.insta-feed-flex img{
+   margin-right: 3%;
 
 }
-#submitButton{
-    border-radius: 30px; flex-basis: 30%; height: 40px ;
-    background-color: rgb(113, 220, 255);
-    color: white;
+.footer2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(32, 32, 32);
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 5%;
 
 }
-#instaFeed{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
 
+.footer2 a img{
+  background-color: inherit;
+}
 
-}
-#logoDiv{
-    flex-basis: 5%;padding-top: 8px;
-}
-#logoImg{
-   width: 60px;
-
-}
-#logoText{
-    flex-basis: 5%;font-size: 20px;padding-top: 25px;color: black;
-}
-#menu-bar{
-    flex-basis: 90%;text-align:right;padding-top: 30px;
-}
-.newsThumbnailDescription{
-    margin: 15px;
-}
-#menuTable{
-    display: none;
-    
-}
-#hireButton{
-    display: none;
+.footer2 div {
+  background-color: inherit;
+  color: white;
 }
 
 @media (min-width: 800px) {
-    .menuDropDown{
-        display: none;
-    }
-    #menuTable{
-        display: none;
-        
-    }
-    
-   
+  .menuDropDown {
+    display: none;
+  }
+
+  .menuTable {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
-    *{
-        width: 100%;
-        margin: 0px;
-        font-weight: 30px;
-    }
-#top-flex{
-    display: none;
-}
-#menubar{
-    display: none;
-}
-#menu-flex{
-    margin: 0px  0px;
+  * {
+    width: 100%;
+    margin: 0px;
+    font-weight: 30px;
+  }
+
+  .logo-icon {
+    flex-basis: 20%;
+    align-items: left;
+
+  }
+
+  .logo-name{
+    flex-basis: 80%;
+    text-align: left;
+    padding: 5%;
+    padding-top: 6%;
+  }
+  
+  .menu-flex{
+    width: 100%;
     justify-content: space-between;
-}
-.menuDropDown{
-    flex-basis: 20%;text-align:center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .menuDropDown {
+    flex-basis: 10%;
+  }
+
+  .top-flex {
+    display: none;
+  }
+
+  .menubar {
+    display: none;
+  }
 
 
-}
-.menuDropDown a img{
+  .menuDropDown {
+    flex-basis: 20%;
+    text-align: center;
+  }
+
+  .menuDropDown a img {
     padding: 22px;
     float: right;
-}
-#menuTable{
-   
+  }
+
+  .menuTable {
     text-align: center;
     display: none;
-    margin:0 35% ;
+    margin: 0 35%;
     transition: height 2s;
+  }
 
-}
-#menuTable tr th a{
+  .menuTable tr th a {
     text-align: center;
-}
-img{
+  }
+
+  img {
     width: 100%;
-}
-#banner{
+  }
+
+  .banner {
     height: 300px;
     background-size: 100% 100%;
     background-repeat: space;
@@ -256,26 +425,27 @@ img{
     height: 250px;
     font-size: 30px;
     padding-left: 5%;
-    font-weight:  10;
+    font-weight: 10;
     padding-top: 15%;
     text-align: left;
-}
-#hireButton{
+  }
+
+  .hireButton {
     display: block;
     width: 100px;
     background-color: rgb(48, 197, 247);
     color: white;
     border: 0px;
     border-radius: 5px;
-}
-h1{
+  }
+
+  h1 {
     margin-top: 5px;
     font-size: 30px;
     line-height: 1.25;
+  }
 
-}
-
-.newsSection{
+  .newsSection {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -283,19 +453,16 @@ h1{
     width: 100%;
     justify-content: center;
     margin-left: 5px;
-    
-}
-.newsText{
-    margin: 5%;
-}
-.newsThumbnail{
+  }
+
+  
+
+  .newsThumbnail {
     border: 1px solid lightgray;
     width: 100%;
     margin-top: 50px;
     padding: 5px 5px;
     float: left;
-
-    
-}
+  }
 
 }
