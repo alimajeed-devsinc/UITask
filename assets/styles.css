@@ -361,6 +361,7 @@ li a :active {
   .menuTable {
     display: none;
   }
+  
 }
 
 @media (max-width: 800px) {
@@ -495,6 +496,7 @@ li a :active {
   .feedbackFlex {
     flex-direction: column;
     padding: 2%;
+    height: fit-content;
   }
 
   .feedbackSection {
@@ -556,7 +558,7 @@ li a :active {
     display: block;
     height: fit-content;
     background-color: rgb(32, 32, 32) ;
-
+    text-align: justify  ;
    
 
   }
@@ -593,4 +595,34 @@ li a :active {
     padding: 2%;
     margin: 5%;
   }
+
+  .feedback2 {
+    display: none;
+  }
+}
+
+
+.bordered-circle {
+  border: 10px solid white;
+  border-radius: 50%;
+  height: 150px;  
+  width: 150px;
+  background-color: rgb(32, 32, 32) ;
+  
+}
+
+.blue-circle {
+  border: 0px lightblue solid;
+  background-color: rgb(32, 32, 32);
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 8%;
+}
+.black-circle {
+  border-radius: 50%;
+  background-color: rgb(32, 32, 32);
+}
+.circle-button :hover {
+  transform: scale(1.2);
 }
