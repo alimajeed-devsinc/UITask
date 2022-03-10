@@ -580,8 +580,8 @@ li a :active {
     color: white;
     border: solid 1px white;
     border-radius: 5px;
-
-
+    padding: 2%;
+    margin: 5%;
     
   }
 
@@ -590,5 +590,7 @@ li a :active {
     color: grey ;
     border: solid 1px white;
     border-radius: 5px;
+    padding: 2%;
+    margin: 5%;
   }
 }
