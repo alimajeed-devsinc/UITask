@@ -576,19 +576,9 @@ li a :active {
   }
 
   .button1{
+    flex-basis: 40%;
+    width: 60%;
     background-color: rgb(32, 32, 32);
-    color: white;
-    border: solid 1px white;
-    border-radius: 5px;
-
-
     
-  }
-
-  .button2{
-    background-color: white;
-    color: grey ;
-    border: solid 1px white;
-    border-radius: 5px;
   }
 }
