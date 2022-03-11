@@ -352,6 +352,10 @@ li a :active {
 .portfolio-section {
   display: none;
 }
+.portfolio-footer {
+  display: none !important;
+}
+
 
 @media (min-width: 800px) {
   .menuDropDown {
@@ -362,6 +366,14 @@ li a :active {
     display: none;
   }
   
+}
+@media (max-width: 400px) and (min-width:340px) {
+  .portfolio-footer{
+    display: block !important;
+  }
+  .portfolio-section {
+    display: block !important;
+  }
 }
 
 @media (max-width: 800px) {
@@ -555,12 +567,16 @@ li a :active {
   }
 
   .portfolio-section {
-    display: block;
+    display: none;
     height: fit-content;
     background-color: rgb(32, 32, 32) ;
     text-align: justify  ;
    
 
+  }
+
+  .portfolio-footer {
+    display: none   ;
   }
 
   .portfolio-image {
@@ -602,6 +618,7 @@ li a :active {
 }
 
 
+
 .bordered-circle {
   border: 10px solid white;
   border-radius: 50%;
@@ -626,3 +643,4 @@ li a :active {
 .circle-button :hover {
   transform: scale(1.2);
 }
+
