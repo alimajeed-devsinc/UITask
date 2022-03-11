@@ -644,3 +644,15 @@ li a :active {
   transform: scale(1.2);
 }
 
+.news-thumbnail:hover {
+  border: 2px lightgray solid;
+  border-radius: 10%;
+
+
+}
+
+.category-grid div :hover {
+  border: 2% lightgray solid;
+  border-radius: 20%;
+  transform: 1.5;
+}
