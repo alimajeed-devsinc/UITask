@@ -128,6 +128,7 @@ li a :active {
   padding: 0;
   border-radius: 5px;
   width: 98%;
+  
 }
 
 .news-thumbnail h3 {
@@ -616,6 +617,26 @@ li a :active {
   .feedback2 {
     display: none;
   }
+
+  .email-flex {
+    flex-direction: column;
+    align-items: left;
+
+  }
+
+  .email-field {
+    padding: 3%!important;
+    border-radius: 25%;
+    width: 85%;
+    margin: 1%;
+  }
+
+  .submitButton {
+    padding: 3% !important;
+    width: 30%;
+    margin: 2%;
+  }
+
 }
 
 
