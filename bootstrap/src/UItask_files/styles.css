@@ -1,0 +1,584 @@
+* {
+  background-color: white;
+  color: rgb(70, 69, 69);
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  color: grey;
+  line-height: 1.8;
+}
+
+h3 {
+  line-height: 1.8;
+}
+
+.top-flex {
+  display: flex;
+  flex-direction: row;
+  border: lightgray 1px solid;
+  height: 70px;
+  width: 100%;
+  font-weight: bold;
+  margin-right: 2%;
+  
+}
+
+.logo-name {
+  flex-basis: 5%;
+  font-size: 2em;
+  padding-top: 25px;
+  color: black;
+  font-weight: bold;
+  overflow: visible;
+  padding-bottom: 1%;
+  
+}
+
+
+.phone-top-flex {
+  flex-basis: 20%; 
+  text-align: right;
+  padding-right: 5%;
+
+}
+
+.top-flex div {
+  border-right: 1px lightgray solid;
+  padding-top: 2em;
+  padding-right: 1em;
+  
+}
+
+.menu-flex {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  margin-left: 8%;
+  margin-top: 3px;
+  font-weight: bold;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding-right: 5%;
+
+}
+
+li a:hover {
+  color: lightblue;
+}
+
+li a :active {
+  color: lightblue;
+}
+
+.banner {
+  background-image: url(/src/home-banner-bg.png);
+  height: 80%;
+  background-size: 120% 110%;
+  background-repeat: no-repeat;
+  color: white;
+  padding-left: 5%;
+  font-size:  5em;
+  font-weight: 10px;
+  padding-top: 15%;
+  text-align: left;
+}
+
+.news-section {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  width: 60%;
+  
+}
+
+.news-section-thumbnails{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  justify-content:space-between;
+}
+
+.news-thumbnail {
+  flex-basis: 30%;
+  border: 1px solid lightgray;
+  margin-top: 50px;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.news-thumbnail h3 {
+  text-align: center;
+  word-spacing: 1.5;
+  margin-top: 5%;
+}
+
+.news-thumbnail img {
+  width: 100%;
+}
+
+.project-section {
+  text-align: center;
+  margin: 0 20%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.categories {
+  text-align: center;
+}
+
+.categories a {
+  text-decoration: none;
+  margin: 15px;
+}
+
+.categories a:hover {
+  color: lightblue;
+}
+
+.category-grid {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 2%;
+  width: 85%;
+  margin: auto auto;
+  align-items: center;
+  margin-bottom: 2%;
+  justify-content: center;
+
+}
+
+.category-grid img {
+  width: min-content;
+  margin-top: 30px;
+  padding: 0;
+  width: inherit;
+}
+.feedbackFlex {
+  background-color: lightblue;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  gap: 1%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.feedbackSection {
+  background-color: white;
+  color: black;
+  height: 35%;
+  width: 30%;
+  margin: 10% 10px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  padding-right: 0;
+  width: 40%;
+  text-align: left;
+}
+.feedbackSection h2 {
+  line-height: 2em;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.feedbackSection img {
+  width: 30px;
+  height: 30px;
+  margin: 25px;
+}
+
+.newsletter div {
+  margin-left: 0 !important;
+}
+
+.footer {
+  background-color: rgb(32, 32, 32);
+  display: inline-flex;
+  flex-direction: row;
+  max-height: 45vh;
+  width: 100%;
+  clear: both;
+  text-align: left;
+  color: white;
+  padding: 5% 0;
+}
+.footer div {
+  background-color: inherit;
+  color: white;
+  margin: 5%;
+}
+
+.footer div h3 {
+  background-color: inherit;
+  color: white;
+}
+
+.submitButton {
+  border-radius: 30px;
+  flex-basis: 30%;
+  height: 40px;
+  background-color: rgb(113, 220, 255);
+  color: white;
+}
+
+.instaFeed {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoDiv {
+  flex-basis: 5%;
+  padding-top: 8px;
+}
+
+.logoImg {
+  width: 60px;
+}
+
+.logoText {
+  flex-basis: 5%;
+  font-size: 20px;
+  padding-top: 25px;
+  color: black;
+}
+
+
+.newsThumbnailDescription {
+  margin: 15px;
+}
+
+.menuTable {
+  display: none;
+}
+
+.hireButton {
+  display: none;
+}
+
+.logo-icon{
+  flex-basis: 5%;
+  padding-top: 8px;
+
+} 
+
+.menu-flex img {
+  padding-top: 5%;
+  
+}
+
+.logo-icon img {
+  padding-top: 5%;
+}
+
+.menubar{
+  flex-basis: 90%;
+  text-align:right;
+  padding-top: 30px;
+  padding-right:3%;
+  
+}
+
+.email-flex{
+  justify-content: space-between;
+}
+  
+.insta-feed-flex {
+  display: flex;
+  flex-direction: row;
+  margin: 2% !important;
+  
+}
+
+.insta-feed-flex img{
+   margin-right: 3%;
+
+}
+.footer2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(32, 32, 32);
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  
+
+}
+
+.footer2 a img{
+  background-color: inherit;
+}
+
+.footer2 div {
+  background-color: inherit;
+  color: white;
+}
+
+.insta-feed-flex {
+  overflow: hidden;
+}
+
+.portfolio-section {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .menuDropDown {
+    display: none;
+  }
+
+  .menuTable {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  * {
+    width: 100%;
+    margin: 0px;
+    font-weight: 30px;
+  }
+
+  .logo-icon {
+    flex-basis: 20%;
+    align-items: left;
+
+  }
+
+  .logo-name{
+    flex-basis: 80%;
+    text-align: left;
+    /* padding: 5%; */
+    padding-top: 6%;
+    padding-left: 0px;
+  }
+  
+  .menu-flex{
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .menuDropDown {
+    flex-basis: 10%;
+  }
+
+  .top-flex {
+    display: none;
+  }
+
+  .menubar {
+    display: none;
+  }
+
+
+  .menuDropDown {
+    flex-basis: 20%;
+    text-align: center;
+  }
+
+  .menuDropDown a img {
+    padding: 22px;
+    float: right;
+  }
+
+  .menuTable {
+    text-align: center;
+    display: none;
+    margin: 0 35%;
+    transition: height 2s;
+  }
+
+  .menuTable tr th a {
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .banner {
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: space;
+    color: white;
+    height: 250px;
+    font-size: 30px;
+    padding-left: 5%;
+    font-weight: 10;
+    padding-top: 15%;
+    text-align: left;
+  }
+
+  .hireButton {
+    display: block;
+    width: 100px;
+    background-color: rgb(48, 197, 247);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+  }
+
+  h1 {
+    margin-top: 5px;
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .newsSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  .news-section-thumbnails {
+    flex-direction: column;
+    
+  }
+
+  
+
+  .newsThumbnail {
+    border: 1px solid lightgray;
+    width: 100%;
+    margin-top: 50px;
+    padding: 5px 5px;
+    float: left;
+  }
+
+  .project-section {
+    margin-left: 0;
+    margin-right: 0;
+    text-indent: 1%;
+  }
+
+  .category-grid {
+    flex-direction: column;
+  }
+
+  .feedbackFlex {
+    flex-direction: column;
+    padding: 2%;
+  }
+
+  .feedbackSection {
+    height: fit-content;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .feedbackSection div {
+    width: fit-content;
+    overflow: hidden;
+  }
+  .footer {
+    flex-direction: column;
+    margin: 0%;
+    max-height: max-content;
+
+  }
+  .footer div {
+    height: fit-content;
+  }
+
+  
+  
+  .instaFeed img {
+    height: 15% !important;
+    width: 15% !important;
+  }
+
+  .footer2 {
+    justify-content: space-around !important;
+  }
+
+  .insta-feed-flex img {
+    margin-right: 7%;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer2 div a img {
+    height: 10%;
+    width: 10%;
+    margin-right: 5%;
+  }
+  .footer2 div a {
+    background-color: inherit !important;
+  }
+
+  
+  .footer2 div {
+    padding-bottom: 5%;
+    
+  }
+
+  .portfolio-section {
+    display: block;
+    height: fit-content;
+    background-color: rgb(32, 32, 32) ;
+
+   
+
+  }
+
+  .portfolio-image {
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    background-color: inherit;
+
+  }
+  .portfolio-div {
+    padding: 25%;
+    font-size: 2em;
+    color: lightgray !important;
+  }
+
+  .button1{
+    flex-basis: 40%;
+    width: 60%;
+    background-color: rgb(32, 32, 32);
+    
+  }
+}

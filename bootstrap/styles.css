@@ -1,0 +1,11 @@
+* {
+    font-family: "Poppins", sans-serif;
+    color: rgb(114, 114, 114);
+}
+a{
+    text-decoration: none;
+}
+div a {
+    color: inherit;
+}
+
